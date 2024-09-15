@@ -1,15 +1,10 @@
-import Card from "./Card"
+import Button from "./Button/Button"
 
 function App() {
 
   return (
     <>
-
-  <div className="card-container" >
-      <Card />
-      <Card />
-      <Card />
-    </div>
+    <Button></Button>
     </>
   )
 }
