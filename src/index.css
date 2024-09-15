@@ -1,47 +1,39 @@
-/* Header menu styling */
-nav ul {
-  list-style-type: none; /* Removes bullets */
-  margin: 0;
-  padding: 0;
-  display: flex;         /* Aligns items in one line */
-  background-color: #333; /* Background color */
+/* Container for multiple cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Ensures the cards wrap to the next line if there's not enough space */
+  justify-content: center; /* Centers the cards horizontally */
+  gap: 20px; /* Adds spacing between cards */
+  margin: 20px;
 }
 
-nav ul li {
-  margin-right: 15px;    /* Space between menu items */
-}
-
-nav ul li a {
-  display: block;
-  color: white;          /* Link color */
+/* Card styling (same as before) */
+.card {
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow to make it look like a card */
+  background-color: #fff;
   text-align: center;
-  padding: 14px 20px;    /* Padding around links */
-  text-decoration: none; /* No underline */
+  font-family: Arial, sans-serif;
 }
 
-nav ul li a:hover {
-  background-color: #111; /* Background color change on hover */
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
 }
 
-/* Footer menu with a simpler style */
-footer ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;         /* Still in one line, but simpler */
-  justify-content: center; /* Centers items in the footer */
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
 }
 
-footer ul li {
-  margin-right: 10px;    /* Space between footer items */
-}
-
-footer ul li a {
-  text-decoration: none; /* No underline */
-  color: #666;           /* Light gray link color */
-  padding: 10px;         /* Less padding than the header */
-}
-
-footer ul li a:hover {
-  color: #333;           /* Change text color on hover */
+.card p {
+  font-size: 16px;
+  color: #777;
+  line-height: 1.5;
 }
