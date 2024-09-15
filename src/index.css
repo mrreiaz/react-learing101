@@ -1,0 +1,47 @@
+/* Header menu styling */
+nav ul {
+  list-style-type: none; /* Removes bullets */
+  margin: 0;
+  padding: 0;
+  display: flex;         /* Aligns items in one line */
+  background-color: #333; /* Background color */
+}
+
+nav ul li {
+  margin-right: 15px;    /* Space between menu items */
+}
+
+nav ul li a {
+  display: block;
+  color: white;          /* Link color */
+  text-align: center;
+  padding: 14px 20px;    /* Padding around links */
+  text-decoration: none; /* No underline */
+}
+
+nav ul li a:hover {
+  background-color: #111; /* Background color change on hover */
+}
+
+/* Footer menu with a simpler style */
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;         /* Still in one line, but simpler */
+  justify-content: center; /* Centers items in the footer */
+}
+
+footer ul li {
+  margin-right: 10px;    /* Space between footer items */
+}
+
+footer ul li a {
+  text-decoration: none; /* No underline */
+  color: #666;           /* Light gray link color */
+  padding: 10px;         /* Less padding than the header */
+}
+
+footer ul li a:hover {
+  color: #333;           /* Change text color on hover */
+}
